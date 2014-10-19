@@ -1,0 +1,16 @@
+language: python
+python:
+  - "3.3"
+  - "3.4"
+install:
+  - pip install .
+  - pip install -r requirements.txt
+# command to run tests
+script: nosetests
+deploy:
+  provider: pypi
+  user: jsam84
+  password:
+    secure: CevO5wKE0BSiXzAH9uzuYfIfQBo5D0WmCxYc3SJl6HRb3+9Xudk+LLKL1P2tDlT0chRsiwg14BZOUsuXjix1tLIU8+bcE5ZunM3hUkSe7j5ZvoIkN8G76mqj5MAxbryDYvoqIhH9YhXeDDPGsN4Rx/5KW3iToO4F0JUTdak69kY=
+  on:
+    branch: master
