@@ -6,7 +6,6 @@ install:
 - pip install .
 - pip install -r requirements.txt
 script: nosetests
-script: python setup.py register
 deploy:
   provider: pypi
   user: jsam84
@@ -14,3 +13,5 @@ deploy:
     secure: C1NG4sSxhQEkl9A1XWjCifFa+rMFu1e6IbAB+b4Ekbw8MyEnwuta2ULdnXfVWXzZArqoRWCWBwzWR21O4jfFNPkabxoMbI5S9egaV9+THufV0t6IgQngshOSOSPMOBoKfVu2vrUfKRsmLw6SSg8ZDL+jC6EDIeWgpcDTMkV9ZCw=
   on:
     repo: excellentingenuity/argumentsprocessor
+after_deploy:
+ python setup.py register
