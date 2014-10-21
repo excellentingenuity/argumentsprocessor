@@ -39,7 +39,7 @@ setup(
   classifiers = [
     'Programming Language :: Python :: 3.3',
     'Programming Language :: Python :: 3.4',
-    'License :: BSD New',
+    'License :: OSI Approved :: BSD License',
     'Development Status :: Production',
   ],
 )
