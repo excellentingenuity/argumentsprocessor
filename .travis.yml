@@ -12,5 +12,6 @@ deploy:
     secure: C1NG4sSxhQEkl9A1XWjCifFa+rMFu1e6IbAB+b4Ekbw8MyEnwuta2ULdnXfVWXzZArqoRWCWBwzWR21O4jfFNPkabxoMbI5S9egaV9+THufV0t6IgQngshOSOSPMOBoKfVu2vrUfKRsmLw6SSg8ZDL+jC6EDIeWgpcDTMkV9ZCw=
   on:
     tags: true
+    all_branches: true
 after_deploy:
  python setup.py register
