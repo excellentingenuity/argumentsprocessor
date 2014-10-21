@@ -1,16 +1,15 @@
 language: python
 python:
-  - "3.3"
-  - "3.4"
+- '3.3'
+- '3.4'
 install:
-  - pip install .
-  - pip install -r requirements.txt
-# command to run tests
+- pip install .
+- pip install -r requirements.txt
 script: nosetests
 deploy:
   provider: pypi
   user: jsam84
   password:
-    secure: CevO5wKE0BSiXzAH9uzuYfIfQBo5D0WmCxYc3SJl6HRb3+9Xudk+LLKL1P2tDlT0chRsiwg14BZOUsuXjix1tLIU8+bcE5ZunM3hUkSe7j5ZvoIkN8G76mqj5MAxbryDYvoqIhH9YhXeDDPGsN4Rx/5KW3iToO4F0JUTdak69kY=
+    secure: C1NG4sSxhQEkl9A1XWjCifFa+rMFu1e6IbAB+b4Ekbw8MyEnwuta2ULdnXfVWXzZArqoRWCWBwzWR21O4jfFNPkabxoMbI5S9egaV9+THufV0t6IgQngshOSOSPMOBoKfVu2vrUfKRsmLw6SSg8ZDL+jC6EDIeWgpcDTMkV9ZCw=
   on:
-    branch: master
+    repo: excellentingenuity/argumentsprocessor
