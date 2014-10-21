@@ -38,7 +38,6 @@ setup(
   keywords = ['arguments', 'processing'], # arbitrary keywords
   license = 'BSD New',
   classifiers = [
-    'Programming Language :: Python :: 3.3',
     'Programming Language :: Python :: 3.4',
     'License :: OSI Approved :: BSD License',
     'Development Status :: 5 - Production/Stable',
