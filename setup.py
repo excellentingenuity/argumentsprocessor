@@ -1,4 +1,5 @@
 from distutils.core import setup
+import argumentsprocessor
 long_description = ''
 
 try:
@@ -27,7 +28,7 @@ except:
 setup(
   name = 'argumentsprocessor',
   packages = ['argumentsprocessor'], # this must be the same as the name above
-  version = '1.0.4',
+  version = argumentsprocessor.__version__,
   description = 'An arguments processor',
   long_description=long_description,
   author = 'James Johnson',
