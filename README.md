@@ -74,6 +74,6 @@ A Python module that process a dictionary of arguments against a supplied dictio
             print('mode is' arguments['mode']
 
 
-    @copyright: James Johnson 2014
-    @license: MIT, see license file
+    @copyright: James Johnson, Excellent InGenuity LLC, 2014
+    @license: BSD New, see license file
 
