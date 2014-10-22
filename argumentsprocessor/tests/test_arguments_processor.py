@@ -41,9 +41,14 @@ def test_arguments_processor():
     temp_processor = ArgumentsProcessor(expected_arguments, supplied_arguments)
     assert temp_processor.return_arguments == expected_return
 
-def test_arguments_are_invalid():
-    assert_raises(ArgumentsProcessorExceptionArgumentsAreInvalid, ArgumentsProcessor, expected_arguments, {'mode':'encrypt', 'data':''})
-
 def test_supplied_arguments_are_none():
     assert_raises(ArgumentsProcessorExceptionArgumentsAreNone, ArgumentsProcessor, expected_arguments, None)
 
+def test_matching_expected_and_supplied_keys():
+    bad_arguments = {'day':'monday', 'data':'hello'}
+    assert_raises(
+        ArgumentsProcessorExceptionArgumentsAreInvalid,
+        ArgumentsProcessor,
+        expected_arguments,
+        bad_arguments
+    )
