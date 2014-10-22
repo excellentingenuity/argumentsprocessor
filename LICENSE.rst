@@ -1,42 +1,33 @@
-| Copyright (c) 2014, James Johnson, Excellent InGenuity LLC
-| ![iVBORw0KGgoAAAANSUhEUgAAAMEAAADHCAYAAACgGzeBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAvvSURBVHhe7d37c1TlHcfx/gf9obXachFMCYVURRAIFh25ExKTmIuGUhFqLDT3zSbmHggZmpDABEGc6UhLHWVQOrTAQHFsp2pvoCAIASoSYFom49iZjuOUIlDMt+fZPcuc3T1Znu+SZJ/9ns9n5j3jD+7JgXle2UsEv0YY5vEBAeb5AQHm+QEB5vkBAeb5AQHm+QEB5vkBAeb5AQHm+WkhSF++gtIKnqbJeYUim5BbSHNWPkuHNxTQV+0P0JW2KWIbaE+jnR3P0fyGNprrr6d5/jqRzX+hkXJb1tonOPa0EEzIfpLGZmbTmIwskd29KIsezMul91rnEbWOpxvNKWKj1rH0i+ZCmlpeSzPLqym93CeyWVU19JiVzrQQqO+W6rCMXrREZN9asIQefqqA/ty2mAaaxtGVhvvERk1jaMeapTSzqp5mlFTSzJIKkSkI6hlBZ0BgBQTyAgJmQCAvIGAGBPICAmZAIC8gYAYE8gICZkAgLyBgBgTyAgJmQCAvIGAGBPICAmZAIC8gYAYE8gICZkAgLyBgBgTyAgJmQCAvIGAGBPICAmZAIC8gYAYE8gICZkAgLyBgBgTyAgJmQCAvIGAGBPICAmZAIC8gYAYE8gICZkAgLyBgBgTyAgJmQCAvIGAGBPICAmZAIC8gYAYE8gICZkAgLyBgBgTyAgJmQCAvIGAGBPICAmZAIC8gYAYE8gICZkAgLyBgBgTyAgJmQCAvIGAGBPICAmZAIC8gYAYE8gICZkAgLyBgBgTyAgJmQCAvIGAGBPICAmZAIC8gYAYE8gICZkAgLyBgBgTyAgJmQCAvIGAGBPICAmZAIC8gYAYE8hpyBBNz8mj04kwatTBDZHfNz6BpBfn0l7ZFRC3j6cumFLFRyxja3rqUplQ00EMlPppaUiWyaeV+mu0bQgTTf7ScUnPzaaLQxufk0+zly+iddVl0rSWVPm+aJLbrLd+lXeuK6ImGBsqsqaasGp/MaqupqKXRPsGxp4Ugu76JHiurpDkVPpE9WuGnXOtA/Lb5CTrn/x6d9qeJ7Uz1JDrV9jgd25BNRzuyrDJFduxnGXSip8g+wbGnhWCu9dpqVqWf0suqRPZwmZ+W+CrpNzWP04niu+j94nvEdsTqH/VpdNN6xqOme+lmo8yoZRzdWJtmn+DY00Kg3mCoNxpub0AkNM16bRxAUDvHEwguNTxA/22dTFcb3d88S+hGcwpdaZtin+DYAwIrIJAXEDADAnkBATMgkBcQMAMCeQEBMyCQFxAwAwJ5AQEzIJAXEDADAnkBATMgkBcQMAMCeQEBMyCQFxAwAwJ5AQEzIJAXEDADAnkBATMgkBcQMAMCeQEBMyCQFxAwA
-| All rights reserved.
+Copyright (c) 2014, James Johnson, `Excellent InGenuity LLC`_ |Excellnt
+InGenuity LLC| All rights reserved.
 
-| Redistribution and use in source and binary forms, with or without
-| modification, are permitted provided that the following conditions are
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
 met:
 
--  | Redistributions of source code must retain the above copyright
-   notice, this
-   |  list of conditions and the following disclaimer.
+-  Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
 
--  | Redistributions in binary form must reproduce the above copyright
-   notice,
-   |  this list of conditions and the following disclaimer in the
-   documentation
-   |  and/or other materials provided with the distribution.
+-  Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
 
--  | Neither the name of test nor the names of its
-   |  contributors may be used to endorse or promote products derived
-   from
-   |  this software without specific prior written permission.
+-  Neither the name of test nor the names of its contributors may be
+   used to endorse or promote products derived from this software
+   without specific prior written permission.
 
-| THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-“AS IS”
-| AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
-THE
-| IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
-PURPOSE ARE
-| DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
-LIABLE
-| FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-CONSEQUENTIAL
-| DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
-GOODS OR
-| SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
-HOWEVER
-| CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
-LIABILITY,
-| OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
-THE USE
-| OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS
+IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+.. _Excellent InGenuity LLC: http://www.excellentingenuity.com
+
+.. |Excellnt InGenuity LLC| image:: https://scontent-a-iad.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1175355_602042159838890_1554623188_n.png?oh=f8b48478d862bc2536d02de28ea732b0&oe=54AF42AA
