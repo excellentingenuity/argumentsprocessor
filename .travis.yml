@@ -6,8 +6,8 @@ install:
 - pip install -r requirements.txt
 - pip install coveralls
 script:
-  - python setup.py install
-  - nosetests --with-coverage # Add me to run nose with coverage
+  - coverage run --source=argumentsprocessor setup.py test
+  - nosetests --with-coverage --cover-package=argumentsprocessor# Add me to run nose with coverage
 after_sucess:
  coveralls.io
 deploy:
