@@ -91,7 +91,7 @@ class ArgumentsProcessor(object):
     """
 
     __author__ = 'James Johnson'
-    __version__ = '1.1.1'
+    __version__ = '1.1.2'
 
     supplied_arguments = {}
     expected_arguments = {}
