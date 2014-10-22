@@ -1,4 +1,4 @@
-argumentsprocessor
+ArgumentsProcessor
 ==================
 [![Build Status](https://travis-ci.org/excellentingenuity/argumentsprocessor.svg?branch=master)](https://travis-ci.org/excellentingenuity/argumentsprocessor)
 [![Coverage Status](https://img.shields.io/coveralls/excellentingenuity/argumentsprocessor.svg)](https://coveralls.io/r/excellentingenuity/argumentsprocessor)
@@ -6,6 +6,13 @@ argumentsprocessor
 [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=jsam84&url=https://github.com/excellentingenuity/argumentsprocessor&title=argumentsprocessor&language=GH_PROJECT_PROG_LANGUAGE&tags=github&category=software)
 
 A Python module that process a dictionary of arguments against a supplied dictionary of expected arguments.
+
+**Install**
+
+`pip install argumentsprocessor`
+
+
+**Documentation**
 
  ArgumentsProcessor Module
 
