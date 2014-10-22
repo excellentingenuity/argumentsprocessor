@@ -1,12 +1,16 @@
-argumentsprocessor
+ArgumentsProcessor
 ==================
 
-| |Build Status|
-| |Coverage Status|
-| |PyPI version|
+|Build Status| |Coverage Status| |PyPI version| |Flattr this git repo|
 
 A Python module that process a dictionary of arguments against a
 supplied dictionary of expected arguments.
+
+**Install**
+
+``pip install argumentsprocessor``
+
+**Documentation**
 
 ArgumentsProcessor Module
 
@@ -76,12 +80,7 @@ ArgumentsProcessor Module
                 'mode':mode,
                 'data':data
             }
-            arguments = ArgumentsProcessor(self.expected_arguments, supplied_arguments)
-            print('mode is' arguments['mode']
-
-
-    @copyright: James Johnson, Excellent InGenuity LLC, 2014
-    @license: BSD New, see license file
+            arguments = ArgumentsProcessor(self.expected_arguments, s
 
 .. |Build Status| image:: https://travis-ci.org/excellentingenuity/argumentsprocessor.svg?branch=master
    :target: https://travis-ci.org/excellentingenuity/argumentsprocessor
@@ -89,3 +88,5 @@ ArgumentsProcessor Module
    :target: https://coveralls.io/r/excellentingenuity/argumentsprocessor
 .. |PyPI version| image:: https://badge.fury.io/py/argumentsprocessor.svg
    :target: http://badge.fury.io/py/argumentsprocessor
+.. |Flattr this git repo| image:: http://api.flattr.com/button/flattr-badge-large.png
+   :target: https://flattr.com/submit/auto?user_id=jsam84&url=https://github.com/excellentingenuity/argumentsprocessor&title=argumentsprocessor&language=GH_PROJECT_PROG_LANGUAGE&tags=github&category=software
