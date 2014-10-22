@@ -4,7 +4,12 @@ python:
 install:
 - pip install .
 - pip install -r requirements.txt
-script: nosetests
+- pip install coveralls
+script:
+  - python setup.py install
+  - nosetests --with-coverage # Add me to run nose with coverage
+after_sucess:
+ coveralls.io
 deploy:
   provider: pypi
   user: jsam84
