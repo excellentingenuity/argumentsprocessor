@@ -43,3 +43,7 @@ def test_arguments_processor():
 
 def test_arguments_are_invalid():
     assert_raises(ArgumentsProcessorExceptionArgumentsAreInvalid, ArgumentsProcessor, expected_arguments, {'mode':'encrypt', 'data':''})
+
+def test_supplied_arguments_are_none():
+    assert_raises(ArgumentsProcessorExceptionArgumentsAreNone, ArgumentsProcessor, expected_arguments, None)
+
