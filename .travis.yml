@@ -7,7 +7,7 @@ install:
 script:
   - nosetests --with-coverage --cover-package=argumentsprocessor # Add me to run nose with coverage
 after_sucess:
- coveralls --verbose
+  - coveralls --verbose
 deploy:
   provider: pypi
   user: jsam84
