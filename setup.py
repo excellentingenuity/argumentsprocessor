@@ -1,7 +1,10 @@
 from distutils.core import setup
 import argumentsprocessor
-with open('README.rst') as file:
-    long_description = file.read()
+try:
+    with open('README.rst') as file:
+        long_description = file.read()
+except:
+    pass
 
 setup(
   name = 'argumentsprocessor',
