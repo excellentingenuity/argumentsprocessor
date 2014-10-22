@@ -1,0 +1,8 @@
+=====CHANGES.txt=====
+Version 1.1.0-dev1a (10/22/2014)
+- Adding more documentation
+- Adding README and LICENSE rst files
+- Branched to 1.1 dev version to begin upgrades
+
+TODO:
+- Add more tests to cover possible failures - reference coverals.io report
