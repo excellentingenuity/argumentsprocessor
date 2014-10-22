@@ -1,6 +1,7 @@
 argumentsprocessor
 ==================
 [![Build Status](https://travis-ci.org/excellentingenuity/argumentsprocessor.svg?branch=master)](https://travis-ci.org/excellentingenuity/argumentsprocessor)
+[![Coverage Status](https://img.shields.io/coveralls/excellentingenuity/argumentsprocessor.svg)](https://coveralls.io/r/excellentingenuity/argumentsprocessor)
 
 A Python module that process a dictionary of arguments against a supplied dictionary of expected arguments.
 
