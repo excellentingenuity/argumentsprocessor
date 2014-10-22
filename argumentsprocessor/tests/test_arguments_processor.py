@@ -40,3 +40,6 @@ def test_init_object():
 def test_arguments_processor():
     temp_processor = ArgumentsProcessor(expected_arguments, supplied_arguments)
     assert temp_processor.return_arguments == expected_return
+
+def test_arguments_are_invalid():
+    assert_raises(ArgumentsProcessorExceptionArgumentsAreInvalid, ArgumentsProcessor, expected_arguments, {'mode':'encrypt', 'data':''})
