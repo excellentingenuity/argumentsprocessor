@@ -7,7 +7,7 @@ install:
 script:
   - nosetests --with-coverage --cover-package=argumentsprocessor --cover-inclusive > test.log 2>&1 # Add me to run nose with coverage
 after_script:
-  - coveralls --verbose --rcfile=.coveragerc
+  - coveralls --rcfile=.coveragerc
 deploy:
   provider: pypi
   user: jsam84
