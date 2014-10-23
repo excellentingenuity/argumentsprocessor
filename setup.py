@@ -1,5 +1,7 @@
 from distutils.core import setup
 import argumentsprocessor
+
+long_description = ''
 try:
     with open('README.rst') as file:
         long_description = file.read()
