@@ -5,8 +5,7 @@ install:
 - pip install .
 - pip install coveralls
 script:
-- nosetests -s -v --with-coverage --cover-package=argumentsprocessor --cover-inclusive
-#  - nosetests --with-coverage --cover-package=argumentsprocessor --cover-inclusive > test.log 2>&1 # Add me to run nose with coverage
+  - nosetests --with-coverage --cover-package=argumentsprocessor --cover-inclusive > test.log 2>&1 # Add me to run nose with coverage
 after_script:
   - coveralls --rcfile=.coveragerc
 deploy:
