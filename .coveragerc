@@ -4,3 +4,4 @@ source = argumentsprocessor
 omit =
     */python?.?/*
     */site-packages/nose/*
+    */site-packages/rollbar/*
