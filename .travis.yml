@@ -4,6 +4,7 @@ python:
 install:
 - pip install .
 - pip install coveralls
+- pip install rollbar
 script:
   - nosetests -v --with-coverage --cover-package=argumentsprocessor --cover-inclusive 2>&1 | tee test.log # Add me to run nose with coverage
 after_script:
