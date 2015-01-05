@@ -1,4 +1,9 @@
 =====CHANGES.txt=====
+Version 1.1.6 (1/5/15)
+**Stable**
+- Fixed a potential issue in the process_arguments function
+- Added rollbar exception reporting
+
 Version 1.1.5 (10/22/14)
 **Stable**
 - Issue with setup.py from 1.1x branch resolved
