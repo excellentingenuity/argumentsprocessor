@@ -149,5 +149,5 @@ class ArgumentsProcessor(object):
         return True
 
     def process_arguments(self):
-        for expeceted_argument_key in self.expected_arguments:
-            self.return_arguments[expeceted_argument_key] = self.supplied_arguments[expeceted_argument_key]
+        for expected_argument_key in self.expected_arguments:
+            self.return_arguments[expected_argument_key] = self.supplied_arguments[expected_argument_key]
