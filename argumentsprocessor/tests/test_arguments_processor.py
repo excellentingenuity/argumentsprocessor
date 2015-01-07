@@ -4,6 +4,7 @@ from nose.tools import *
 
 from argumentsprocessor.argumentsprocessor import ArgumentsProcessor
 from argumentsprocessor.argumentsprocessorexception import *
+from argumentsprocessor import rollbar_cfg as rollbar_cfg
 
 expected_arguments = {
             'mode': {
@@ -52,3 +53,10 @@ def test_matching_expected_and_supplied_keys():
         expected_arguments,
         bad_arguments
     )
+
+def test_rollbar_cfg_token():
+    assert rollbar_cfg.token == '4c000b04f99c4fbf930db9ff1e845736'
+
+
+def test_rollbar_cfg_env():
+    assert rollbar_cfg.environment == 'production'
