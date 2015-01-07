@@ -4,10 +4,11 @@
 __author__ = 'James Johnson'
 
 import rollbar
+import argumentsprocessor.rollbar_cfg as rollbar_cfg
 
 class ArgumentsProcessorException(Exception):
     def __init__(self, msg):
-        rollbar.init('4c000b04f99c4fbf930db9ff1e845736', 'production')  # access_token, environment
+        rollbar.init(rollbar_cfg.token, rollbar_cfg.environment)  # access_token, environment
         rollbar.report_message(msg, 'error')
         rollbar.report_exc_info()
         Exception.__init__(self, msg)
