@@ -129,32 +129,33 @@ class ArgumentsProcessor(object):
      #TODO: break into 3 functions, needs to handle not required items but will not add items not expected
         for (expected_argument_key, expected_argument_value) in self.expected_arguments.items():
             if expected_argument_key in self.supplied_arguments:
-                # TODO: add check if value is valid
+                if self.validate_by_rules(expected_argument_value, self.supplied_arguments[expected_argument_key]):
+                    return True
+                else:
+                    return False
             elif self.is_required(expected_argument_value):
-                raise ArgumentsProcessorExceptionArgumentsAreInvalid()
                 return False
-            else:
 
     def is_required(self, expected_argument_value):
+        print(expected_argument_value['required'])
         return expected_argument_value['required']
-
-    def validate_supplied_argumentsx(self):
-        for (expected_argument_key, expected_argument_value) in self.expected_arguments.items():
-            for (supplied_argument_key, supplied_argument_value) in self.supplied_arguments.items():
-                if supplied_argument_key != expected_argument_key:
-                    return False
-                else:
-                    if self.validate_by_rules(expected_argument_value, supplied_argument_value):
-                        return True
 
     def validate_by_rules(self, expected_argument_value, supplied_argument_value):
         if self.is_required(expected_argument_value):
             if self.check_supplied_argument_value_is_not_none_or_empty(supplied_argument_value):
-                return True
+                if self.check_supplied_argument_value_is_expected(expected_argument_value, supplied_argument_value):
+                    return True
+                else:
+                    return False
             else:
                 return False
         else:
-            return False
+            if self.check_supplied_argument_value_is_expected(expected_argument_value, supplied_argument_value):
+                    return True
+            else:
+                print(supplied_argument_value)
+                print(expected_argument_value['arguments'])
+                return False
 
     def check_supplied_argument_value_is_not_none_or_empty(self, supplied_argument_value):
         if supplied_argument_value is None:
@@ -162,6 +163,12 @@ class ArgumentsProcessor(object):
         if supplied_argument_value == '':
             return False
         return True
+
+    def check_supplied_argument_value_is_expected(self, expected_argument_value, supplied_argument_value):
+        if supplied_argument_value in expected_argument_value['arguments']:
+            return True
+        else:
+            return False
 
     def process_arguments(self):
         for expected_argument_key in self.expected_arguments:
