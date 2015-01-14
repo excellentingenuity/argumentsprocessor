@@ -45,7 +45,7 @@ def test_arguments_processor():
 def test_supplied_arguments_are_none():
     assert_raises(ArgumentsProcessorExceptionArgumentsAreNone, ArgumentsProcessor, expected_arguments, None)
 
-def test_matching_expected_and_supplied_keys():
+def test_matching_expected_and_supplied_keys_exception():
     bad_arguments = {'day':'monday', 'data':'hello'}
     assert_raises(
         ArgumentsProcessorExceptionArgumentsAreInvalid,
@@ -53,6 +53,12 @@ def test_matching_expected_and_supplied_keys():
         expected_arguments,
         bad_arguments
     )
+
+def test_matching_expected_and_supplied_keys_true():
+    temp_processor = ArgumentsProcessor(expected_arguments, supplied_arguments)
+    temp_arguments = temp_processor.return_arguments
+    assert temp_arguments == supplied_arguments
+    assert temp_arguments == expected_return
 
 def test_rollbar_cfg_token():
     assert rollbar_cfg.token == '4c000b04f99c4fbf930db9ff1e845736'

@@ -126,20 +126,35 @@ class ArgumentsProcessor(object):
             self.supplied_arguments = supplied_arguments
 
     def validate_supplied_arguments(self):
+     #TODO: break into 3 functions, needs to handle not required items but will not add items not expected
+        for (expected_argument_key, expected_argument_value) in self.expected_arguments.items():
+            if expected_argument_key in self.supplied_arguments:
+                # TODO: add check if value is valid
+            elif self.is_required(expected_argument_value):
+                raise ArgumentsProcessorExceptionArgumentsAreInvalid()
+                return False
+            else:
+
+    def is_required(self, expected_argument_value):
+        return expected_argument_value['required']
+
+    def validate_supplied_argumentsx(self):
         for (expected_argument_key, expected_argument_value) in self.expected_arguments.items():
             for (supplied_argument_key, supplied_argument_value) in self.supplied_arguments.items():
-                if supplied_argument_key == expected_argument_key:
+                if supplied_argument_key != expected_argument_key:
+                    return False
+                else:
                     if self.validate_by_rules(expected_argument_value, supplied_argument_value):
                         return True
-                    return False
-                return False
 
     def validate_by_rules(self, expected_argument_value, supplied_argument_value):
-        if expected_argument_value['required'] == True:
+        if self.is_required(expected_argument_value):
             if self.check_supplied_argument_value_is_not_none_or_empty(supplied_argument_value):
                 return True
+            else:
+                return False
+        else:
             return False
-        return False
 
     def check_supplied_argument_value_is_not_none_or_empty(self, supplied_argument_value):
         if supplied_argument_value is None:

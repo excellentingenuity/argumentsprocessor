@@ -10,7 +10,6 @@ class ArgumentsProcessorException(Exception):
     def __init__(self, msg):
         rollbar.init(rollbar_cfg.token, rollbar_cfg.environment)  # access_token, environment
         rollbar.report_message(msg, 'error')
-        rollbar.report_exc_info()
         Exception.__init__(self, msg)
 
 
