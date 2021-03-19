@@ -1,4 +1,4 @@
-Jinja2==2.7.3
+Jinja2==2.11.3
 MarkupSafe==0.23
 NoseGrowlNotify==0.1
 Pygments==1.6
